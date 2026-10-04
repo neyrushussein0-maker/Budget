@@ -1,0 +1,152 @@
+/* Element selector */
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+margin: 0;
+padding: 30px;
+}
+
+/* Element selector */
+h1 {
+text-align: center;
+color: #333;
+}
+
+/* Element selector + descendant selector */
+header p {
+text-align: center;
+color: #666;
+}
+
+/* ID selector */
+#add-expense {
+background-color: white;
+padding: 25px;
+margin: 30px auto;
+max-width: 500px;
+border-radius: 10px;
+}
+
+/* Class selector */
+.expenses {
+background-color: #e8f5e9;
+padding: 25px;
+margin: 30px auto;
+max-width: 800px;
+border-radius: 10px;
+}
+
+/* Element selector */
+h2 {
+color: #222;
+}
+
+/* Element selector */
+label {
+display: block;
+margin-top: 15px;
+margin-bottom: 5px;
+}
+
+/* Input selector */
+input {
+width: 100%;
+padding: 10px;
+box-sizing: border-box;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+/* Select styling */
+select {
+width: 100%;
+padding: 10px;
+box-sizing: border-box;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+/* Advanced selector: negation pseudo-class */
+input:not([type="submit"]) {
+background-color: #fafafa;
+}
+
+/* Advanced selector: focus pseudo-class */
+input:focus,
+select:focus {
+outline: 2px solid #81c784;
+}
+
+/* Button styling */
+button {
+margin-top: 20px;
+padding: 12px 20px;
+border: none;
+border-radius: 5px;
+background-color: #4caf50;
+color: white;
+cursor: pointer;
+}
+
+/* Table styling */
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 15px;
+}
+
+/* Advanced selector: descendant selector */
+.expenses-section td,
+.expenses td {
+padding: 12px;
+}
+
+/* Table cells */
+th,
+td {
+border: 1px solid #999;
+padding: 12px;
+text-align: left;
+}
+
+/* Colored header row */
+th {
+background-color: #4caf50;
+color: white;
+}
+
+/* Advanced selector: position pseudo-class */
+tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+/* Table hover effect */
+tr:hover {
+background-color: #d7f0d8;
+}
+
+/* Details section */
+details {
+max-width: 800px;
+margin: 30px auto;
+background-color: white;
+padding: 15px;
+border-radius: 8px;
+}
+
+/* Summary */
+summary {
+cursor: pointer;
+font-weight: bold;
+}
+
+/* Multimedia section */
+.multimedia {
+max-width: 800px;
+margin: 30px auto;
+text-align: center;
+}
+
+.multimedia iframe {
+max-width: 100%;
+}
