@@ -1,152 +1,271 @@
-/* Element selector */
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+/* ==============================
+
+1. PAGE STYLING
+   ============================== */
+
 body {
-font-family: Arial, sans-serif;
-background-color: #f4f4f4;
+font-family: 'DM Sans', sans-serif;
+background-color: #f5f1e8;
+color: #26352b;
 margin: 0;
 padding: 30px;
 }
 
-/* Element selector */
+/* ==============================
+2. PAGE HEADING CARD
+============================== */
+
+header {
+background-color: #ffffff;
+max-width: 900px;
+margin: 0 auto 30px;
+padding: 30px;
+border: 1px solid #d8e0d5;
+border-radius: 16px;
+text-align: center;
+box-sizing: border-box;
+}
+
+header img {
+margin-bottom: 10px;
+}
+
 h1 {
-text-align: center;
-color: #333;
+font-family: 'Playfair Display', serif;
+color: #245c3a;
+margin: 0 0 10px;
+font-size: 36px;
 }
 
-/* Element selector + descendant selector */
 header p {
-text-align: center;
-color: #666;
+color: #66736a;
+margin: 0;
+font-size: 16px;
 }
 
-/* ID selector */
-#add-expense {
-background-color: white;
-padding: 25px;
-margin: 30px auto;
-max-width: 500px;
-border-radius: 10px;
-}
+/* ==============================
+3. SECTION HEADINGS
+============================== */
 
-/* Class selector */
-.expenses {
-background-color: #e8f5e9;
-padding: 25px;
-margin: 30px auto;
-max-width: 800px;
-border-radius: 10px;
-}
-
-/* Element selector */
 h2 {
-color: #222;
+font-family: 'Playfair Display', serif;
+color: #245c3a;
+margin-top: 0;
 }
 
-/* Element selector */
+/* ==============================
+4. ADD EXPENSE FORM CARD
+============================== */
+
+#add-expense {
+background-color: #ffffff;
+max-width: 500px;
+margin: 0 auto 30px;
+padding: 30px;
+border: 1px solid #d8e0d5;
+border-radius: 16px;
+box-sizing: border-box;
+}
+
+/* Labels */
+
 label {
 display: block;
-margin-top: 15px;
-margin-bottom: 5px;
+margin-top: 16px;
+margin-bottom: 6px;
+font-weight: 600;
+color: #34483a;
 }
 
-/* Input selector */
+/* Inputs */
+
 input {
 width: 100%;
-padding: 10px;
+padding: 12px;
 box-sizing: border-box;
-border: 1px solid #ccc;
-border-radius: 5px;
+border: 1px solid #c8d2c8;
+border-radius: 8px;
+background-color: #fafcf9;
+font-family: 'DM Sans', sans-serif;
+font-size: 15px;
 }
 
-/* Select styling */
+/* Select */
+
 select {
 width: 100%;
-padding: 10px;
+padding: 12px;
 box-sizing: border-box;
-border: 1px solid #ccc;
-border-radius: 5px;
+border: 1px solid #c8d2c8;
+border-radius: 8px;
+background-color: #fafcf9;
+font-family: 'DM Sans', sans-serif;
+font-size: 15px;
 }
 
-/* Advanced selector: negation pseudo-class */
-input:not([type="submit"]) {
-background-color: #fafafa;
-}
+/* Focus effect */
 
-/* Advanced selector: focus pseudo-class */
 input:focus,
 select:focus {
-outline: 2px solid #81c784;
+outline: none;
+border-color: #4f8a64;
+box-shadow: 0 0 0 3px #dcebdd;
 }
 
-/* Button styling */
+/* Negation pseudo-class */
+
+input:not([type="submit"]) {
+background-color: #fafcf9;
+}
+
+/* ==============================
+5. BUTTON
+============================== */
+
 button {
-margin-top: 20px;
-padding: 12px 20px;
+margin-top: 22px;
+padding: 12px 22px;
 border: none;
-border-radius: 5px;
-background-color: #4caf50;
+border-radius: 8px;
+background-color: #2f6b45;
 color: white;
+font-family: 'DM Sans', sans-serif;
+font-size: 15px;
+font-weight: 600;
 cursor: pointer;
 }
 
-/* Table styling */
+button:hover {
+background-color: #245c3a;
+}
+
+/* ==============================
+6. EXPENSE TABLE CARD
+============================== */
+
+.expenses {
+background-color: #ffffff;
+max-width: 900px;
+margin: 0 auto 30px;
+padding: 30px;
+border: 1px solid #d8e0d5;
+border-radius: 16px;
+box-sizing: border-box;
+}
+
+/* Table */
+
 table {
 width: 100%;
 border-collapse: collapse;
-margin-top: 15px;
-}
-
-/* Advanced selector: descendant selector */
-.expenses-section td,
-.expenses td {
-padding: 12px;
+margin-top: 20px;
 }
 
 /* Table cells */
+
 th,
 td {
-border: 1px solid #999;
-padding: 12px;
+border: 1px solid #d8e0d5;
+padding: 14px;
 text-align: left;
 }
 
-/* Colored header row */
+/* Table header */
+
 th {
-background-color: #4caf50;
+background-color: #2f6b45;
 color: white;
+font-weight: 600;
 }
 
-/* Advanced selector: position pseudo-class */
+/* Alternating row colors */
+
 tr:nth-child(even) {
-background-color: #f2f2f2;
+background-color: #f1f6f1;
 }
 
-/* Table hover effect */
+/* Hover effect */
+
 tr:hover {
-background-color: #d7f0d8;
+background-color: #dcebdd;
 }
 
-/* Details section */
+/* Descendant selector */
+
+.expenses td {
+color: #3f4d43;
+}
+
+/* ==============================
+7. HOW TO USE SECTION
+============================== */
+
 details {
-max-width: 800px;
-margin: 30px auto;
-background-color: white;
-padding: 15px;
-border-radius: 8px;
+max-width: 900px;
+margin: 0 auto 30px;
+padding: 18px 22px;
+background-color: #ffffff;
+border: 1px solid #d8e0d5;
+border-radius: 12px;
+box-sizing: border-box;
 }
 
-/* Summary */
 summary {
 cursor: pointer;
-font-weight: bold;
+font-weight: 600;
+color: #245c3a;
 }
 
-/* Multimedia section */
+/* ==============================
+8. MULTIMEDIA
+============================== */
+
 .multimedia {
-max-width: 800px;
-margin: 30px auto;
+max-width: 900px;
+margin: 0 auto 30px;
+padding: 30px;
+background-color: #ffffff;
+border: 1px solid #d8e0d5;
+border-radius: 16px;
+box-sizing: border-box;
 text-align: center;
 }
 
 .multimedia iframe {
 max-width: 100%;
+border-radius: 10px;
+}
+
+/* ==============================
+9. RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 600px) {
+
+```
+body {
+    padding: 15px;
+}
+
+header,
+#add-expense,
+.expenses,
+.multimedia {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+th,
+td {
+    padding: 9px;
+    font-size: 13px;
+}
+```
+
 }
